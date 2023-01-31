@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@400;700&family=Roboto:wght@300&family=Ubuntu:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','Bebas Neue','Comic Neue','Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+nav .logoImg{
+    width: 150px;
+}
+
+nav .btn{
+    display: inline-flex;
+    align-items: center;
+}
+
+nav .btn button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #e50914;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+    outline: 0;
+    border: 0;
+}
+
+nav .btn .language-btn{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+nav .language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.language-btn .fa-globe{
+    margin-right: 8px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+}
+
+.header-content h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #fff;
+    max-width: 650px;
+}
+
+.header-content h3{
+    font-size: 27px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.header-content p{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.header-content .email-signup{
+    margin-top: 30px;
+    display: flex;
+    background: #fff;
+    overflow: hidden;
+}
+
+.header-content .email-signup input{
+    flex: 1;
+    outline: 0;
+    border: 0;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.header-content .email-signup button{
+    padding: 10px 20px;
+    background: #e50914;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.features{
+    width: 100%;
+    height:500px;
+    background: #000;
+    margin-top: 10px;
+    padding: 30px 8%;
+}
+
+.features .advert-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advert-media .colText{
+    flex-basis: 50%;
+}
+
+.advert-media .col-Vid{
+    flex-basis: 50%;
+    height: fit-content;
+}
+
+.advert-media .colText h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.advert-media .colText p{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.advert-media .col-Vid img{
+    width: 100%;
+    float: right;
+}
