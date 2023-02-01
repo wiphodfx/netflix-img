@@ -92,14 +92,14 @@ nav .language-btn img{
     margin-top: 40px;
 }
 
-.header-content .email-signup{
+.header-content .email-signup, .header-contents .email-signup{
     margin-top: 30px;
     display: flex;
     background: #fff;
     overflow: hidden;
 }
 
-.header-content .email-signup input{
+.header-content .email-signup input, .header-contents .email-signup input{
     flex: 1;
     outline: 0;
     border: 0;
@@ -107,7 +107,7 @@ nav .language-btn img{
     font-size: 16px;
 }
 
-.header-content .email-signup button{
+.header-content .email-signup button, .header-contents .email-signup button {
     padding: 10px 20px;
     background: #e50914;
     outline: 0;
@@ -118,11 +118,9 @@ nav .language-btn img{
 }
 
 .features{
-    width: 100%;
-    height:500px;
     background: #000;
     margin-top: 10px;
-    padding: 30px 8%;
+    padding: 30px 12%;
 }
 
 .features .advert-media{
@@ -133,11 +131,13 @@ nav .language-btn img{
 
 .advert-media .colText{
     flex-basis: 50%;
+    margin: 20px 0;
 }
 
 .advert-media .col-Vid{
     flex-basis: 50%;
     height: fit-content;
+   
 }
 
 .advert-media .colText h2{
@@ -154,5 +154,87 @@ nav .language-btn img{
 
 .advert-media .col-Vid img{
     width: 100%;
-    float: right;
+    margin: auto;
+}
+
+/* ------------------------------------faq Section------------------------------------------ */
+
+.faq{
+    text-align: center;
+    padding: 100px 18%;
+    background-color: #000;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.faq h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content {
+    max-height: 0;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    background: #303030;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 650px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.header-contents{
+    margin-top: 30px;
+    width: 45%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
